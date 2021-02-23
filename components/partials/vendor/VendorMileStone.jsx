@@ -6,23 +6,21 @@ const VendorMileStone = () => (
             <div className="ps-section__header">
                 <p>How it works</p>
                 <h4>
-                    Easy to start selling online on Martfury just 4 simple steps
+                    Easy to start using our customized setup in just 4 simple steps
                 </h4>
             </div>
             <div className="ps-section__content">
                 <div className="ps-block--vendor-milestone">
                     <div className="ps-block__left">
-                        <h4>Register and list your products</h4>
+                        <h4>Scanners</h4>
                         <ul>
                             <li>
-                                Register your business for free and create a
-                                product catalogue. Get free training on how to
-                                run your online business
+                                There are vairous type of scanners that our traders have been using.
+                                We are making them available for ThinkOrSwim market.
                             </li>
                             <li>
-                                Our Martfury Advisors will help you at every
-                                step and fully assist you in taking your
-                                business online
+                                Finding the right trade is the hardest thing for traders.
+                                We can make that an easy task.
                             </li>
                         </ul>
                     </div>
@@ -35,17 +33,17 @@ const VendorMileStone = () => (
                 </div>
                 <div className="ps-block--vendor-milestone reverse">
                     <div className="ps-block__left">
-                        <h4>Receive orders and sell your product</h4>
+                        <h4>Strategies</h4>
                         <ul>
                             <li>
-                                Register your business for free and create a
-                                product catalogue. Get free training on how to
-                                run your online business
+                                Different trader uses different type of indicators
+                                when looking to trade.  Some even have entry and exit
+                                indicators.
                             </li>
                             <li>
-                                Our Martfury Advisors will help you at every
-                                step and fully assist you in taking your
-                                business online
+                                Some rely on technical analysis to trade while others
+                                work on momentum and patterns.  There is no "right-way" to
+                                trade.  If it works for you, than that is the best way.
                             </li>
                         </ul>
                     </div>
@@ -58,17 +56,17 @@ const VendorMileStone = () => (
                 </div>
                 <div className="ps-block--vendor-milestone">
                     <div className="ps-block__left">
-                        <h4>Package and ship with ease</h4>
+                        <h4>Custom scanners and strategies</h4>
                         <ul>
                             <li>
-                                Register your business for free and create a
-                                product catalogue. Get free training on how to
-                                run your online business
+                                We noticed that being a software developer makes
+                                day trading a bit easier.  We can write a custom
+                                software to find exact setup.
                             </li>
                             <li>
-                                Our Martfury Advisors will help you at every
-                                step and fully assist you in taking your
-                                business online
+                                If you want a custom package with complexity
+                                far beyond the capability of scripts, let us develop that you.
+                                You understand how valuable such a thing is for trading.
                             </li>
                         </ul>
                     </div>
@@ -81,17 +79,16 @@ const VendorMileStone = () => (
                 </div>
                 <div className="ps-block--vendor-milestone reverse">
                     <div className="ps-block__left">
-                        <h4>Package and ship with ease</h4>
+                        <h4>Make more money</h4>
                         <ul>
                             <li>
-                                Register your business for free and create a
-                                product catalogue. Get free training on how to
-                                run your online business
+                                At the end of the day, it is all about winning.
+                                Your winning.
                             </li>
                             <li>
-                                Our Martfury Advisors will help you at every
-                                step and fully assist you in taking your
-                                business online
+                                Make more money with less work. You cannot win if you
+                                are not consistent, and you cannot be consistent
+                                if you cannot find quality setups.
                             </li>
                         </ul>
                     </div>

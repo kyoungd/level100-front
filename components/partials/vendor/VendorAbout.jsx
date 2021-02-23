@@ -4,10 +4,10 @@ const VendorAbout = () => (
     <div className="ps-section--vendor ps-vendor-about">
         <div className="container">
             <div className="ps-section__header">
-                <p>WHY SELL ON MARTFURY</p>
+                <p>WHAT DO WE DO</p>
                 <h4>
-                    Join a marketplace where nearly 50 million buyers around <br /> the world shop
-                    for unique items
+                    As a day trader, most of our time is spent on searching for the right setups. <br />
+                    Our customized script for ThinkOrSwim will do that better.
                 </h4>
             </div>
             <div className="ps-section__content">
@@ -18,11 +18,10 @@ const VendorAbout = () => (
                                 <img src="/static/img/icons/vendor-1.png" alt="martfury" />
                             </div>
                             <div className="ps-block__content">
-                                <h4>Low Fees</h4>
+                                <h4>Cut Time</h4>
                                 <div className="ps-block__desc" data-mh="about-desc">
                                     <p>
-                                        It doesn’t take much to list your items and once you make a
-                                        sale, Martfury’s transaction fee is just 2.5%.
+                                        Use our scanners or allow us to build you a custom scanner. It will save you countless hours of searching and staring at the chart looking.
                                     </p>
                                 </div>
                                 <a href="#">Learn more</a>
@@ -38,8 +37,7 @@ const VendorAbout = () => (
                                 <h4>Powerful Tools</h4>
                                 <div className="ps-block__desc" data-mh="about-desc">
                                     <p>
-                                        Our tools and services make it easy to manage, promote and
-                                        grow your business.
+                                        Allow our solution to find the winning setup just in time to take advantage of the development. Market changes rapidly but we help you to be quicker.
                                     </p>
                                 </div>
                                 <a href="#">Learn more</a>
@@ -52,11 +50,10 @@ const VendorAbout = () => (
                                 <img src="/static/img/icons/vendor-3.png" alt="martfury" />
                             </div>
                             <div className="ps-block__content">
-                                <h4>Support 24/7</h4>
+                                <h4>More Revenue</h4>
                                 <div className="ps-block__desc" data-mh="about-desc">
                                     <p>
-                                        Our tools and services make it easy to manage, promote and
-                                        grow your business.
+                                        At the end of the day, it is all about winning. With our solution, you can find setups that you are looking for automatically and win more trades.
                                     </p>
                                 </div>
                                 <a href="#">Learn more</a>

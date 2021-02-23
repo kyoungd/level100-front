@@ -5,35 +5,31 @@ const VendorBestFrees = () => (
         <div className="container">
             <div className="ps-section__header">
                 <p>BEST FEES TO START</p>
-                <h4>Affordable, transparent, and secure</h4>
+                <h4>Automatic, transparent, and secure</h4>
             </div>
             <div className="ps-section__content">
                 <h5>
-                    It doesn’t cost a thing to list up to 50 items a month, and you only pay after
-                    your stuff sells. It’s just a small percent of the money you earn
+                    Trading is hard and fun, and we can help you with the hard part.
+                    Use our automated tools to make your trading easier and
+                    more profitable.
                 </h5>
                 <div className="ps-section__numbers">
                     <figure>
-                        <h3>$0</h3>
-                        <span>List Fee</span>
+                        <h3>$80</h3>
+                        <span>Additional Profit</span>
                     </figure>
                     <figure>
-                        <h3>5%</h3>
-                        <span>Final Value Fee</span>
+                        <h3>16%</h3>
+                        <span>Increase in Profit</span>
                     </figure>
                 </div>
                 <div className="ps-section__desc">
                     <figure>
-                        <figcaption>Here's what you get for your fee:</figcaption>
+                        <figcaption>Here's what you get:</figcaption>
                         <ul>
-                            <li>A worldwide community of more than 160 million shoppers.</li>
-                            <li>
-                                Shipping labels you can print at home, with big discounts on
-                                postage.
-                            </li>
-                            <li>
-                                Seller protection and customer support to help you sell your stuff.
-                            </li>
+                            <li>A tried and true algorithms to lighten your work loads.</li>
+                            <li>Find more quality setups</li>
+                            <li>Right analysis to mark entry and exit</li>
                         </ul>
                     </figure>
                 </div>
@@ -41,17 +37,15 @@ const VendorBestFrees = () => (
                     <img src="/static/img/icons/vendor-4.png" alt="martfury" />
                     <figure>
                         <p>
-                            We process payments with PayPal, an external payments platform that
-                            allows you to process transactions with a variety of payment methods.
-                            Funds from PayPal sales on Martfury will be deposited into your PayPal
-                            account.
+                            We are constantly innovating to make to make our and your trading life
+                            easier and more profitable.  We are creating tools that we use ourselves.
+                            It is a tough market, and it is essential to get all the help we can get.
                         </p>
                     </figure>
                 </div>
                 <div className="ps-section__footer">
                     <p>
-                        Listing fees are billed for 0.20 USD, so if your bank’s currency is not USD,
-                        the amount in your currency may vary based on changes in the exchange rate.
+                        All our algorithm works on ThinkOrSwim (TOS) platform.
                     </p>
                 </div>
             </div>

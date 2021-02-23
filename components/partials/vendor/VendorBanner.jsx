@@ -8,12 +8,11 @@ const VendorBanner = () => (
         <div className="ps-vendor-banner">
             <div className="container">
                 <h2>
-                    Millions Of Shoppers Can’t Wait To See What You Have In
-                    Store
+                    Find gappers and customized stock setup on ThinkOrSwim
                 </h2>
                 <Link href="/vendor/store-list">
                     <a className="ps-btn ps-btn--lg" href="#">
-                        Start Selling
+                        Find Studies
                     </a>
                 </Link>
             </div>
