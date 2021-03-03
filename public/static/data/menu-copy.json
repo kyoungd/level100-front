@@ -3,41 +3,49 @@
         "menu_1": [
             {
                 "text": "Home",
-                "url": "/"
-            },
-            {
-                "text": "Account",
-                "url": "/account/order-tracking",
+                "url": "/",
                 "extraClass": "menu-item-has-children",
                 "subClass": "sub-menu",
                 "subMenu": [
                     {
-                        "text": "Shopping Cart",
-                        "url": "/account/shopping-cart"
+                        "text": "Marketplace Full Width",
+                        "url": "/"
                     },
                     {
-                        "text": "Checkout",
-                        "url": "/account/checkout"
+                        "text": "Home Auto Parts",
+                        "url": "/home/auto-part"
                     },
                     {
-                        "text": "Whishlist",
-                        "url": "/account/wishlist"
+                        "text": "Home Technology",
+                        "url": "/home/technology"
                     },
                     {
-                        "text": "Compare",
-                        "url": "/account/compare"
+                        "text": "Home Organic",
+                        "url": "/home/organic"
                     },
                     {
-                        "text": "Order Tracking",
-                        "url": "/account/order-tracking"
+                        "text": "Home Marketplace V1",
+                        "url": "/home/market-place"
                     },
                     {
-                        "text": "My Account",
-                        "url": "/account/login"
+                        "text": "Home Marketplace V2",
+                        "url": "/home/market-place-2"
                     },
                     {
-                        "text": "Login / Register",
-                        "url": "/account/login"
+                        "text": "Home Marketplace V3",
+                        "url": "/home/market-place-3"
+                    },
+                    {
+                        "text": "Home Marketplace V4",
+                        "url": "/home/market-place-4"
+                    },
+                    {
+                        "text": "Home Electronic",
+                        "url": "/home/electronic"
+                    },
+                    {
+                        "text": "Home Furniture",
+                        "url": "/home/furniture"
                     }
                 ]
             },
@@ -52,37 +60,127 @@
                         "heading": "Catalog Pages",
                         "megaItems": [
                             {
-                                "text": "Scanners",
-                                "url": "/shop/category/scanners"
+                                "text": "Shop Default",
+                                "url": "/shop"
                             },
                             {
-                                "text": "Studies",
-                                "url": "/shop/category/studies"
+                                "text": "Shop Fullwidth",
+                                "url": "/shop/shop-fullwidth"
                             },
                             {
-                                "text": "Charts",
-                                "url": "/shop/category/charts"
+                                "text": "Shop Categories",
+                                "url": "/shop/shop-categories"
+                            },
+                            {
+                                "text": "Shop Sidebar",
+                                "url": "/shop/shop-sidebar"
+                            },
+                            {
+                                "text": "Shop Without Banner",
+                                "url": "/shop/shop-sidebar-without-banner"
+                            },
+                            {
+                                "text": "Shop Carousel",
+                                "url": "/shop/shop-carousel"
                             }
                         ]
                     },
                     {
-                        "heading": "Brands",
+                        "heading": "Product Layout",
                         "megaItems": [
                             {
-                                "text": "Level100",
-                                "url": "/shop/brand/level100"
+                                "text": "Default",
+                                "url": "/product/default"
                             },
                             {
-                                "text": "Warrior Trading",
-                                "url": "/shop/brand/warrior-tradding"
+                                "text": "Extended",
+                                "url": "/product/extended"
                             },
                             {
-                                "text": "The Humbled Trader",
-                                "url": "/shop/humbled-trader"
+                                "text": "Full Content",
+                                "url": "/product/full-content"
                             },
                             {
-                                "text": "The Boiler Room",
-                                "url": "/shop/boiler-room"
+                                "text": "Boxed",
+                                "url": "/product/boxed"
+                            },
+                            {
+                                "text": "Sidebar",
+                                "url": "/product/sidebar"
+                            },
+                            {
+                                "text": "Fullwidth",
+                                "url": "/product/default"
+                            }
+                        ]
+                    },
+                    {
+                        "heading": "Product Types",
+                        "megaItems": [
+                            {
+                                "text": "Simple",
+                                "url": "/product/default"
+                            },
+                            {
+                                "text": "Images Swatches",
+                                "url": "/product/11"
+                            },
+                            {
+                                "text": "Countdown",
+                                "url": "/product/countdown"
+                            },
+                            {
+                                "text": "Affiliate",
+                                "url": "/product/affiliate"
+                            },
+                            {
+                                "text": "On sale",
+                                "url": "/product/on-sale"
+                            },
+                            {
+                                "text": "Video Featured",
+                                "url": "/product/video-featured"
+                            },
+                            {
+                                "text": "Grouped",
+                                "url": "/product/groupped"
+                            },
+                            {
+                                "text": "Out Of Stock",
+                                "url": "/product/out-of-stock"
+                            }
+                        ]
+                    },
+                    {
+                        "heading": "Ecomerce Pages",
+                        "megaItems": [
+                            {
+                                "text": "Shopping Cart",
+                                "url": "/account/shopping-cart"
+                            },
+                            {
+                                "text": "Checkout",
+                                "url": "/account/checkout"
+                            },
+                            {
+                                "text": "Whishlist",
+                                "url": "/account/wishlist"
+                            },
+                            {
+                                "text": "Compare",
+                                "url": "/account/compare"
+                            },
+                            {
+                                "text": "Order Tracking",
+                                "url": "/account/order-tracking"
+                            },
+                            {
+                                "text": "My Account",
+                                "url": "/account/login"
+                            },
+                            {
+                                "text": "Login / Register",
+                                "url": "/account/login"
                             }
                         ]
                     }

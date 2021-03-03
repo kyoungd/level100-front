@@ -1,96 +1,86 @@
 import React from 'react';
+import Link from 'next/link';
 
 const VendorFaqs = () => (
     <div className="ps-section--vendor ps-vendor-faqs">
         <div className="container">
             <div className="ps-section__header">
                 <p>FREQUENTLY ASKED QUESTIONS</p>
-                <h4>Here are some common questions about selling on Martfury</h4>
+                <h4>Here are some common questions</h4>
             </div>
             <div className="ps-section__content">
                 <div className="row">
                     <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ">
                         <figure>
-                            <figcaption>How do fees work on Martfury?</figcaption>
+                            <figcaption>What can you do help me today?</figcaption>
                             <p>
-                                Joining and starting a shop on Martfury is free. There are three
-                                basic selling fees: a listing fee, a transaction fee, and a payment
-                                processing fee.
+                                We spend a lot of time drawing trend-line and support-line.
+                                We decided to automated that process in TOS, and that saved us
+                                hours of work every day.  We are sure it will save you a similar
+                                amount of time, too.
                             </p>
                             <p>
-                                It costs USD 0.20 to publish a listing to the marketplace. A listing
-                                lasts for four months or until the item is sold. Once an item sells,
-                                there is a 3.5% transaction fee on the sale price (not including
-                                shipping costs). If you accept payments with PayPal, there is also a
-                                payment processing fee based on their fee structure.
+                                It draws a trend-line and support line.  They are two different things.
+                                The trend lines describe what is happening right now, and the support-line
+                                displays the major events that will likely limit price and volume movements.
+                                They are the basics of all trading and
+                                drawing them is what we do every day for every stock that we consider trading.
                             </p>
                             <p>
-                                Listing fees are billed for $0.20 USD, so if your bank’s currency is
-                                not USD, the amount may differ based on changes in the exchange
-                                rate.
+                                We draw trend-line and support line for visible window (minutes),
+                                5 days, and 5 years.  They are color coded so you can differentiate
+                                them easily.
                             </p>
                         </figure>
                         <figure>
-                            <figcaption>What do I need to do to create a shop?</figcaption>
+                            <figcaption>What else do you have for me?</figcaption>
                             <p>
-                                It’s easy to set up a shop on Martfury. Create an Martfury account
-                                (if you don’t already have one), set your shop location and
-                                currency, choose a shop name, create a listing, set a payment method
-                                (how you want to be paid), and finally set a billing method (how you
-                                want to pay your Martfuryfees).
+                                We also share information that we find useful like which combination
+                                of indicators are useful.  Yes, everyone has their own opinion,
+                                but it will help you see some patterns you never considered before.
+                                We must learn, evole and adapt with time.
                             </p>
                         </figure>
                     </div>
                     <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 ">
                         <figure>
-                            <figcaption>How do I get paid?</figcaption>
+                            <figcaption>What is special about us?</figcaption>
                             <p>
-                                If you accept payments with PayPal, funds from PayPal sales on
-                                Martfury will be deposited into your PayPal account. We encourage
-                                sellers to use a PayPal Business account and not a Personal account,
-                                as personal accounts are subject to monthly receiving limits and
-                                cannot accept payments from buyers that are funded by a credit card.
+                                We are day trader who practices we preach every day.
                             </p>
                             <p>
-                                It costs USD 0.20 to publish a listing to the marketplace. A listing
-                                lasts for four months or until the item is sold. Once an item sells,
-                                there is a 3.5% transaction fee on the sale price (not including
-                                shipping costs). If you accept payments with PayPal, there is also a
-                                payment processing fee based on their fee structure.
-                            </p>
-                            <p>
-                                Listing fees are billed for $0.20 USD, so if your bank’s currency is
-                                not USD, the amount may differ based on changes in the exchange
-                                rate.
+                                It is important that all our software developers are day-traders.
+                                Only then, can we understand the pain that you experience.
+                                It is this understanding of day-trading and knowledge of software development
+                                that makes us unique.  Our aim is true.
                             </p>
                         </figure>
                         <figure>
                             <figcaption>
-                                Do I need a credit or debit card to create a shop?
+                                I am a beginner.  How can you help me?
                             </figcaption>
                             <p>
-                                No, a credit or debit card is not required to create a shop. To be
-                                verified as a seller you have the choice to use either a credit card
-                                or to register via PayPal. You will not incur any charges until you
-                                open your shop and publish your listings.
+                                Follow the best advice for beginners.  Limit your loss,
+                                practice trading on simulation instead with real money,
+                                learn to read the trades others made on the chart rather than patterns,
+                                create a strategy that consistantly works for you and so on.
+                            </p>
+                            <p>
+                                Use combination of indicators, until you do not need them.
+                                You will always need some indicators for additional confirmation,
+                                but find the ones that works with your strategy.
                             </p>
                         </figure>
-                        <figure>
-                            <figcaption>What can I sell on Martfury?</figcaption>
-                        </figure>
-                        <p>
-                            Martfury provides a marketplace for crafters, artists and collectors to
-                            sell their handmade creations, vintage goods (at least 20 years old),
-                            and both handmade and non-handmade crafting supplies.
-                        </p>
                     </div>
                 </div>
             </div>
             <div className="ps-section__footer">
                 <p>Still have more questions? Feel free to contact us.</p>
-                <a className="ps-btn" href="#">
-                    Contact Us
-                </a>
+                <div className="ps-btn">
+                    <Link href='/page/contact-us' className="ps-btn">
+                        Contact Us
+                    </Link>
+                </div>
             </div>
         </div>
     </div>

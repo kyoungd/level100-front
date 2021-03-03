@@ -69,7 +69,6 @@ class ShopDefaultPage extends React.Component {
                     <div className="ps-container">
                         <ShopBanner />
                         <ShopBrands />
-                        <ShopCategories />
                         <div className="ps-layout--shop">
                             <ShopWidget />
                             <div className="ps-layout__right">

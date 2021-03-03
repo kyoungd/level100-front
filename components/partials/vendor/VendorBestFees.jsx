@@ -37,7 +37,7 @@ const VendorBestFrees = () => (
                     <img src="/static/img/icons/vendor-4.png" alt="martfury" />
                     <figure>
                         <p>
-                            We are constantly innovating to make to make our and your trading life
+                            We are constantly innovating to make our and your trading lives
                             easier and more profitable.  We are creating tools that we use ourselves.
                             It is a tough market, and it is essential to get all the help we can get.
                         </p>

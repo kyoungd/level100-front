@@ -91,7 +91,6 @@ class Index extends Component {
                     <Newletters />
                 </main>
                 <FooterFullwidth />
-                <SwicherDemo />
             </div>
         );
     }
