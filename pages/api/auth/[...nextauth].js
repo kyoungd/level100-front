@@ -24,19 +24,19 @@ const options = {
   debug: true,
   callbacks: {
     session: async (session, user) => {
-      console.log('session --------------------------- ');
-      console.log(user);
+      // console.log('session --------------------------- ');
+      // console.log(user);
       session.jwt = user.jwt;
       session.id = user.id;
 
       return Promise.resolve(session);
     },
     jwt: async (token, user, account) => {
-      console.log('jwt.user --------------------------- ');
-      console.log(user);
-      console.log('jwt.account --------------------------- ');
-      console.log(account);
-      console.log('jwt.user --------------------------- ');
+      // console.log('jwt.user --------------------------- ');
+      // console.log(user);
+      // console.log('jwt.account --------------------------- ');
+      // console.log(account);
+      // console.log('jwt.user --------------------------- ');
       const isSignIn = user ? true : false;
 
       if (isSignIn) {

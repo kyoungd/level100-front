@@ -47,13 +47,15 @@ class MyApp extends App {
         const getLayout =
             Component.getLayout || (page => <DefaultLayout children={page} />);
         return getLayout(
-            <Provider store={store} session={session}>
-                <PersistGate
-                    loading={<Component {...pageProps} />}
-                    persistor={this.persistor}>
-                    <Component {...pageProps} />
-                </PersistGate>
-            </Provider>
+            <NextAuthProvider session={session}>
+                <Provider store={store} session={session}>
+                    <PersistGate
+                        loading={<Component {...pageProps} />}
+                        persistor={this.persistor}>
+                        <Component {...pageProps} />
+                    </PersistGate>
+                </Provider>
+            </NextAuthProvider>
         );
     }
 }

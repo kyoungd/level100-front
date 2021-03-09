@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import { useSelector, useDispatch } from "react-redux";
 import Link from 'next/link';
-import { useSession } from "next-auth/client";
+import { signIn, signOut, useSession } from "next-auth/client";
 import { logOut } from '../../../../store/auth/action';
 
 const AccountQuickLinks = () => {
-    // let [session] = useSession();
-    const session = undefined;
-    const auth = useSelector(state => state.auth);
+    const [session] = useSession();
+    // const session = undefined;
+    // const auth = useSelector(state => state.auth);
+    console.log('AccountQuickLinks --------------- ');
+    console.log(session);
+
     const dispatch = useDispatch();
 
     const handleLogout = e => {
@@ -52,7 +55,7 @@ const AccountQuickLinks = () => {
                         {accountLinks.map(link => (
                             <li key={link.text}>
                                 <Link href={link.url}>
-                                    <a>{session.name}</a>
+                                    <a>{link.text}</a>
                                 </Link>
                             </li>
                         ))}

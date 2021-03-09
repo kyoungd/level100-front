@@ -6,6 +6,11 @@ export const initState = {
 
 function reducer(state = initState, action) {
     switch (action.type) {
+        case actionTypes.OAUTH_LOGIN:
+            return {
+                ...state,
+                session: action.payload,
+            };
         case actionTypes.LOGIN_SUCCESS:
             return {
                 ...state,

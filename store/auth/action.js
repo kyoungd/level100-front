@@ -5,6 +5,7 @@ export const actionTypes = {
     LOGOUT: 'LOGOUT',
     LOGOUT_SUCCESS: 'LOGOUT_SUCCESS',
     CHECK_AUTHORIZATION: 'CHECK_AUTHORIZATION',
+    OAUTH_LOGIN: 'OAUTH_LOGIN',
 };
 
 export function login() {
@@ -24,5 +25,5 @@ export function logOutSuccess() {
 }
 
 export function oAuthLogin(session) {
-    return { type: actionTypes.OAUTH_LOGIN, pyaload: session };
+    return { type: actionTypes.OAUTH_LOGIN, payload: session };
 }
