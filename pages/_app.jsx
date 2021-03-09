@@ -5,6 +5,8 @@ import withRedux from 'next-redux-wrapper';
 import withReduxSaga from 'next-redux-saga';
 import { persistStore } from 'redux-persist';
 import { PersistGate } from 'redux-persist/integration/react';
+import { Provider as NextAuthProvider } from "next-auth/client";
+
 import createStore from '../store/store';
 import DefaultLayout from '../components/layouts/DefaultLayout';
 import '../scss/style.scss';
@@ -27,14 +29,15 @@ class MyApp extends App {
     }
 
     componentDidMount() {
-        setTimeout(function() {
+        setTimeout(function () {
             document.getElementById('__next').classList.add('loaded');
         }, 100);
 
         this.setState({ open: true });
     }
     render() {
-        const { Component, pageProps, store } = this.props;
+        const { Component, pageProps, store, session } = this.props;
+        console.log(session);
         const getLayout =
             Component.getLayout || (page => <DefaultLayout children={page} />);
         return getLayout(
@@ -42,7 +45,9 @@ class MyApp extends App {
                 <PersistGate
                     loading={<Component {...pageProps} />}
                     persistor={this.persistor}>
-                    <Component {...pageProps} />
+                    <NextAuthProvider session={session}>
+                        <Component {...pageProps} />
+                    </NextAuthProvider>
                 </PersistGate>
             </Provider>
         );
