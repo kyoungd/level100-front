@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
-import { sameBrands } from '../../../public/static/data/product';
 import Product from '../../../components/elements/products/Product';
 import { connect } from 'react-redux';
 import { getColletionBySlug } from '../../../utilities/product-helper';
-class ProductWidgets extends Component{
+class ProductWidgets extends Component {
 
     render() {
         const { collections, collectionSlug } = this.props;
@@ -47,9 +46,9 @@ class ProductWidgets extends Component{
                     <h3>Same Brand</h3>
                     <div className="widget__content">
                         {products &&
-                        products.map(product => (
-                            <Product product={product} key={product.id} />
-                        ))}
+                            products.map(product => (
+                                <Product product={product} key={product.id} />
+                            ))}
                     </div>
                 </aside>
             </section>
@@ -58,4 +57,4 @@ class ProductWidgets extends Component{
 
 }
 
-export default connect(state=>state.collection)(ProductWidgets);
+export default connect(state => state.collection)(ProductWidgets);

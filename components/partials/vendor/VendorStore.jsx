@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
-import { relatedProduct } from '../../../public/static/data/product';
-import Product from '../../elements/products/Product';
+import { getDataProduct } from '../../../../lib/dataProducts';
 import VendorProducts from './modules/VendorProducts';
 import NextArrow from '../../elements/carousel/NextArrow';
 import PrevArrow from '../../elements/carousel/PrevArrow';
@@ -10,7 +9,9 @@ import { carouselStandard } from '../../../utilities/carousel-helpers';
 import ProductOffline from '../../elements/products/ProductOffline';
 
 class VendorStore extends Component {
+
     render() {
+        const relatedProducts = getDataProduct('relatedProduct');
         return (
             <div className="ps-vendor-store">
                 <div className="container">

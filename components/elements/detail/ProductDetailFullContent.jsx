@@ -8,7 +8,8 @@ import { addItem } from '../../../store/cart/action';
 import { addItemToCompare } from '../../../store/compare/action';
 import { addItemToWishlist } from '../../../store/wishlist/action';
 
-import { extended } from '../../../public/static/data/product';
+import { getDataProduct } from '../../../../lib/dataProducts';
+
 class ProductDetailFullContent extends React.Component {
     constructor(props) {
         super(props);
@@ -49,6 +50,7 @@ class ProductDetailFullContent extends React.Component {
     };
 
     render() {
+        const extended = getDataProduct('extended');
         const product = extended;
         const { currency } = this.props;
         return (

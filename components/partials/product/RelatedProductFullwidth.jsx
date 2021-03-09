@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
 
-import { relatedProduct } from '../../../public/static/data/product';
 import Product from '../../../components/elements/products/Product';
+import { getDataProduct } from '../../../../lib/dataProducts';
 
 class RelatedProductFullwidth extends Component {
     constructor(props) {
@@ -10,6 +10,7 @@ class RelatedProductFullwidth extends Component {
     }
 
     render() {
+        const relatedProducts = getDataProduct('relatedProduct');
         const carouselSetting = {
             dots: false,
             arrows: false,
@@ -47,9 +48,8 @@ class RelatedProductFullwidth extends Component {
         const { boxed } = this.props;
         return (
             <div
-                className={`ps-section--default ps-related-products ${
-                    boxed === true ? 'boxed' : ''
-                }`}>
+                className={`ps-section--default ps-related-products ${boxed === true ? 'boxed' : ''
+                    }`}>
                 <div className="ps-section__header">
                     <h3>Related products</h3>
                 </div>

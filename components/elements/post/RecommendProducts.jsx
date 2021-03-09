@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
-import { relatedProduct } from '../../../public/static/data/product';
 import Product from '../products/Product';
 import NextArrow from '../carousel/NextArrow';
 import PrevArrow from '../carousel/PrevArrow';
-
+import { getDataProduct } from '../../../../lib/dataProducts';
 class RecommentProducts extends Component {
     render() {
+        const relatedProducts = getDataProduct('relatedProduct');
         const carouselSetting = {
             dots: false,
             infinite: true,

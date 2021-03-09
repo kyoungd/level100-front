@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
+import Product from '../../../elements/products/Product';
 
 import ProductWide from '../../../elements/products/ProductWide';
-import Product from '../../../elements/products/Product';
-import { relatedProduct } from '../../../../public/static/data/product';
 import ProductOffline from '../../../elements/products/ProductOffline';
+import { getDataProduct } from '../../../../lib/dataProducts';
 
 class VendorProducts extends Component {
     state = {
@@ -17,6 +17,7 @@ class VendorProducts extends Component {
 
     render() {
         const viewMode = this.state.listView;
+        const relatedProducts = getDataProduct('relatedProduct');
         return (
             <div className="ps-shopping vendor-shop">
                 <div className="ps-shopping__header">
@@ -70,14 +71,14 @@ class VendorProducts extends Component {
                             <div className="row">
                                 {relatedProduct && relatedProduct.length > 0
                                     ? relatedProduct.map((product) => (
-                                          <div
-                                              className="col-lg-3 col-md-4 col-sm-6 col-6 "
-                                              key={product.id}>
-                                              <ProductOffline
-                                                  product={product}
-                                              />
-                                          </div>
-                                      ))
+                                        <div
+                                            className="col-lg-3 col-md-4 col-sm-6 col-6 "
+                                            key={product.id}>
+                                            <ProductOffline
+                                                product={product}
+                                            />
+                                        </div>
+                                    ))
                                     : ''}
                             </div>
                         </div>
@@ -85,11 +86,11 @@ class VendorProducts extends Component {
                         <div className="ps-shopping-product">
                             {relatedProduct && relatedProduct.length > 0
                                 ? relatedProduct.map((product) => (
-                                      <ProductWide
-                                          product={product}
-                                          key={product.id}
-                                      />
-                                  ))
+                                    <ProductWide
+                                        product={product}
+                                        key={product.id}
+                                    />
+                                ))
                                 : ''}
                         </div>
                     )}

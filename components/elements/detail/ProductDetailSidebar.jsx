@@ -3,16 +3,19 @@ import React from 'react';
 import DefaultDescription from './modules/description/DefaultDescription';
 import ThumbnailSidebar from './modules/thumbnail/ThumbnailSidebar';
 import InformationSidebar from './modules/information/InformationSidebar';
-import { extended } from '../../../public/static/data/product';
+import { getDataProduct } from '../../../../lib/dataProducts';
 
-const ProductDetailSidebar = () => (
-    <div className="ps-product--detail ps-product--fullwidth">
-        <div className="ps-product__header">
-            <ThumbnailSidebar product={extended} />
-            <InformationSidebar product={extended}/>
+const ProductDetailSidebar = () => {
+    const extended = getDataProduct('extended');
+    return (
+        <div className="ps-product--detail ps-product--fullwidth">
+            <div className="ps-product__header">
+                <ThumbnailSidebar product={extended} />
+                <InformationSidebar product={extended} />
+            </div>
+            <DefaultDescription />
         </div>
-        <DefaultDescription />
-    </div>
-);
+    );
+}
 
 export default ProductDetailSidebar;

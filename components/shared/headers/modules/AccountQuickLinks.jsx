@@ -45,7 +45,6 @@ const AccountQuickLinks = () => {
         },
     ];
 
-    console.log('my session', session);
     if (session) {
         return (
             <div className="ps-block--user-account">
