@@ -1,4 +1,4 @@
-import React, { Component, useEffect } from 'react';
+import { useEffect } from 'react';
 import Link from 'next/link';
 import Router from 'next/router';
 import { signIn, signOut, useSession } from "next-auth/client";
@@ -12,7 +12,6 @@ import { useSelector, useDispatch } from "react-redux";
 // It uses both useSelector()(alternative to mapStateToProps() as in Class based Component) and useDispatch()(alternate to mapDispatchToProps() as in Class based Component).
 
 const Login = () => {
-    const [session] = useSession();
 
     const auth = useSelector(state => state.auth);
     const dispatch = useDispatch();

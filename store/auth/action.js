@@ -22,3 +22,7 @@ export function logOut() {
 export function logOutSuccess() {
     return { type: actionTypes.LOGOUT_SUCCESS };
 }
+
+export function oAuthLogin(session) {
+    return { type: actionTypes.OAUTH_LOGIN, pyaload: session };
+}

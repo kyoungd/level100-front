@@ -35,19 +35,23 @@ class MyApp extends App {
 
         this.setState({ open: true });
     }
+
+    componentWillUnmount() {
+
+    }
+
     render() {
-        const { Component, pageProps, store, session } = this.props;
+        const { Component, pageProps, store } = this.props;
+        const session = {};
         console.log(session);
         const getLayout =
             Component.getLayout || (page => <DefaultLayout children={page} />);
         return getLayout(
-            <Provider store={store}>
+            <Provider store={store} session={session}>
                 <PersistGate
                     loading={<Component {...pageProps} />}
                     persistor={this.persistor}>
-                    <NextAuthProvider session={session}>
-                        <Component {...pageProps} />
-                    </NextAuthProvider>
+                    <Component {...pageProps} />
                 </PersistGate>
             </Provider>
         );

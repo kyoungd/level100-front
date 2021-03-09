@@ -78,7 +78,7 @@ const VendorFaqs = () => (
                 <p>Still have more questions? Feel free to contact us.</p>
                 <div className="ps-btn">
                     <Link href='/page/contact-us'>
-                        Contact Us
+                        <a>Contact Us</a>
                     </Link>
                 </div>
             </div>
